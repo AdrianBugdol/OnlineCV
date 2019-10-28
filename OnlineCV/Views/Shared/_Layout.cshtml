@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/default.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+
+            <h2 class="header"><a asp-controller="Home" asp-action="Index">Adrian Bugdol</a></h2>
+            <a href="https://github.com/AdrianBugdol"><i><i class="fa fa-github navGit" style="font-size: 45px"></i></i></a>
+
+
+            <ul class="menu">
+                <a asp-controller="Home" asp-action="Projects">Projects</a>
+                <a asp-controller="Home" asp-action="About">About</a>
+                <a asp-controller="Home" asp-action="Contact">Contact</a>
+            </ul>
+
+        </div>
+    </div>
+
+    @RenderBody()
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
